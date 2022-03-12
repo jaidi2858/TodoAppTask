@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#262626</color>
+    <color name="colorPrimaryDark">#262626</color>
+    <color name="colorPrimaryLight">#939393</color>
+    <color name="colorSecondary">#CDB362</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhiteBlack">#ffffff</color>
+    <color name="colorWhiteMateBlack">#ffffff</color>
+    <color name="colorBlackWhite">#000000</color>
+    <color name="colorMateBlackWhite">#262626</color>
+    <color name="colorGrey">#dcdcdc</color>
+</resources>

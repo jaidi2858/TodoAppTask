@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/mainFragment">
+
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.junaid.todoapp.view.fragments.MainFragment"
+        android:label="MainFragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_callListFragment"
+            app:destination="@id/callListFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_buyListFragment"
+            app:destination="@id/buyListFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_sellListFragment"
+            app:destination="@id/sellListFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/callListFragment"
+        tools:layout="@layout/fragment_call_list"
+        android:name="com.junaid.todoapp.view.fragments.CallListFragment"
+        android:label="CallListFragment" />
+    <fragment
+        android:id="@+id/buyListFragment"
+        android:name="com.junaid.todoapp.view.fragments.BuyListFragment"
+        android:label="BuyListFragment" />
+    <fragment
+        android:id="@+id/sellListFragment"
+        android:name="com.junaid.todoapp.view.fragments.SellListFragment"
+        android:label="SellListFragment" />
+
+</navigation>

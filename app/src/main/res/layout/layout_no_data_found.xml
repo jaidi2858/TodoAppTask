@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:visibility="gone"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:id="@+id/ivNoData"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/ic_no_data"
+        android:layout_height="80dp"/>
+    <TextView
+      style="@style/TvHBStyle"
+        android:id="@+id/tvNoDataFound"
+        app:layout_constraintTop_toBottomOf="@id/ivNoData"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        android:visibility="visible"
+        android:text="@string/no_data_found"
+        android:textColor="@color/colorBlackWhite"
+        />
+    <TextView
+        style="@style/TvMBStyle"
+        android:id="@+id/tvNoDataError"
+        app:layout_constraintTop_toBottomOf="@id/ivNoData"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:paddingHorizontal="40dp"
+        android:text="@string/no_data_found"
+        android:textColor="@color/colorBlackWhite"
+        />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:layout_width="wrap_content"
+        android:id="@+id/errorBarrier"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="tvNoDataError,tvNoDataFound"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/btnRetry"
+        style="@style/TvMBStyle"
+        app:layout_constraintTop_toBottomOf="@id/errorBarrier"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:background="@drawable/bg_rect_secondary"
+        android:paddingVertical="8dp"
+        android:paddingHorizontal="30dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/tap_to_retry"
+        android:backgroundTint="@color/colorSecondary"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

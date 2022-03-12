@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorWhiteBlack">#000000</color>
+    <color name="colorWhiteMateBlack">#262626</color>
+    <color name="colorBlackWhite">#ffffff</color>
+    <color name="colorMateBlackWhite">#ffffff</color>
+</resources>
